@@ -29,8 +29,8 @@ const Navbar = ({handleDarkmode, darkmode}) => {
             </div>
             <div onClick={handleNav} className='cursor-pointer xs:block md:hidden'>
                  {
-                  open ? <div><FaTimes /></div>
-                  : <div><FaBars /></div>
+                  open ? <div className='dark:text-white'><FaTimes /></div>
+                  : <div className='dark:text-white'><FaBars /></div>
                  }
             </div>
             <div className={`absolute z-[1] right-10 w-[50%]  transition-all duration-500  ${open ? 'top-24 ':'top-[-490px]'}`}>

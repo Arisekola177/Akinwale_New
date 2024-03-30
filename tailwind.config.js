@@ -12,7 +12,22 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        xs: "240px",
+        sm: "375px",
+        sml: "500px",
+        md: "667px",
+        mdl: "768px",
+        lg: "960px",
+        lgl: "1024px",
+        xl: "1280px",
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'Helvetica', 'Arial', 'sans-serif'],
+        poppins: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [],
+  darkMode: 'class'
 };

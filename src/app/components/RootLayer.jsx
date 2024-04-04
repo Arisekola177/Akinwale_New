@@ -14,7 +14,7 @@ const RootLayer = ({children}) => {
     
   return (
     <div className={`${darkmode && 'dark'}`}>
-        <div className="dark:bg-neutral-700">
+        <div className="dark:bg-neutral-700 overflow-hidden">
         <Navbar handleDarkmode={handleDarkmode} darkmode={darkmode} />
         {children}
         <Footer />

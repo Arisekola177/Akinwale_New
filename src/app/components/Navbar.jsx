@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import {FaBars, FaTimes, FaToggleOn, FaToggleOff} from 'react-icons/fa'
-
+import {motion} from 'framer-motion'
+import { navVariants } from '../utils/motion'
 
 const Navbar = ({handleDarkmode, darkmode}) => {
     const [open, setOpen] = useState(false)
@@ -12,10 +13,15 @@ const Navbar = ({handleDarkmode, darkmode}) => {
       setOpen(!open)
     }
   return (
-    <div className="w-full font-montserrat">
+    <motion.div
+    variants={navVariants}
+    initial='hidden'
+    whileInView='show'
+    viewport={{once: false, amount: 0.25}}
+     className="w-full font-montserrat">
         <div className="xs:w-full xs:px-3 md:px-0 md:w-10/12 md:mx-auto py-6 flex justify-between items-center">
             <div>
-               <Link className='sm:text-xl md:text-2xl font-mono font-semibold dark:text-white' href='/'>Akinwale</Link>
+               <Link className='sm:text-xl md:text-2xl font-mono font-semibold dark:text-white' href='/'>John Bakare</Link>
             </div>
             <div className="cursor-pointer flex justify-center items-center" onClick={handleDarkmode}>
            {
@@ -37,7 +43,7 @@ const Navbar = ({handleDarkmode, darkmode}) => {
             <Link className='font-mono text-black dark:text-white' href='/about'>About me</Link>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

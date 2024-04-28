@@ -4,8 +4,8 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Akinwale",
-  description: "Tech Sales",
+  title: "Bakare John",
+  description: "Actionprenuer",
 };
 
 export default function RootLayout({ children }) {

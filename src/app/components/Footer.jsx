@@ -13,14 +13,14 @@ const Footer = () => {
     className="w-full h-[400px] font-poppins">
         <div className="w-10/12 mx-auto flex justify-between">
              <div className="mt-[100px] flex flex-col gap-4">
-                <h2 className="xs:text-sm md:text-xl font-semibold font-mono dark:text-white">Akinwale</h2>
+                <h2 className="xs:text-sm md:text-xl font-semibold font-mono dark:text-white">John Bakare</h2>
                 <h2 className="text-gray-400 xs:text-sm md:text-lg">Tech Sales</h2>
                 <h2 className="text-gray-400 xs:text-sm md:text-lg">Revenue Operations</h2>
                 <h2 className="text-gray-400 xs:text-sm md:text-lg">Strategy and Growth</h2>
                 
              </div>
              <div  className="mt-[100px] flex flex-col gap-5">
-             <h2 className=" xs:text-sm md:text-xl font-mono dark:text-white ">Socials</h2>  
+             <h2 className=" xs:text-sm md:text-xl font-mono dark:text-white ">Actionpreneur</h2>  
               <Link href='https://www.linkedin.com/in/johnbakare/' target="blank"> 
                <FaLinkedin className="text-xl text-blue-600 cursor-pointer" /> 
                </Link>

@@ -7,6 +7,16 @@ import { fadeIn, slideIn, staggerContainer, textVariant, textVariant2 } from "..
 
 
 const About = ({darkmode}) => {
+
+  const handleDownload = () => {
+
+    const link = document.createElement('a');
+    link.href = akinwale; 
+    link.download = 'akinwale.jpg'; 
+    document.body.appendChild(link); 
+    link.click(); 
+    document.body.removeChild(link); 
+  }
   return (
     <motion.div 
     variants={staggerContainer}
@@ -46,7 +56,9 @@ const About = ({darkmode}) => {
                     <FaEnvelope />
                     <p>Bakare.john2015@gmail.com</p>
                     </div>
-              
+              <button onClick={handleDownload} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+                Download Image
+              </button>
                 </motion.div>
              </motion.div>
              <div className="flex flex-col justify-center items-center">
@@ -55,9 +67,7 @@ const About = ({darkmode}) => {
                 className="py-8 xs:text-base md:text-xl lg:text-3xl font-semibold dark:text-white font-poppins xs:w-[200px] md:w-[400px] mx-auto text-center"> Currently busy revolutionizing the way we make career descisions in the early stages in Africa  </motion.h1>
                 <motion.h2
                  variants={textVariant(1.5)}
-                className="py-8 font-poppins xs:w-full xs:text-xs sm:text-sm dark:text-white md:text-base md:w-[800px] mx-auto md:px-6 text-center leading-8">As a seasoned tech sales professional, I am passionate about leveraging cutting-edge solutions to drive business growth and exceed client expectations.
-                     With a proven track record of strategic sales leadership and an innate ability to identify and capitalize on market opportunities, 
-                    I thrive in dynamic and fast-paced environments. My dedication to client success, coupled with exceptional negotiation skills and a deep understanding of industry trends, enables me to forge strong relationships and deliver tangible results. I am committed to staying at the forefront of technological advancements and continuously refining my sales strategies to ensure continued success for my clients and partners</motion.h2>
+                className="py-8 font-poppins xs:w-full xs:text-xs sm:text-sm dark:text-white md:text-base md:w-[800px] mx-auto md:px-6 text-center leading-8">As a seasoned tech sales professional and Rev Ops Analyst, John is passionate about leveraging cutting-edge solutions to drive business growth while also contributing to helping the next billion workforce make more informed career decisions. With a proven track record in management consulting, strategy and growth, as well as sales leadership, John thrives in dynamic and fast-paced environments. His dedication to client success and user experience, coupled with exceptional negotiation skills and a deep understanding of industry trends, enables him to forge strong relationships and deliver tangible results. John is committed to staying at the forefront of technological advancements to ensure continued success for all stakeholders.</motion.h2>
                 
              </div>
         </div>

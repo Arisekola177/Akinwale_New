@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Akinwale from '../assets/newOne.jpg'
+import akinwale from '../../../public/Akinwale2.jpg'
 import {motion} from 'framer-motion'
 import { slideIn,staggerContainer } from "../utils/motion";
 
@@ -15,7 +15,7 @@ const Portfolio = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
           className="xs:w-full md:w-10/12 md:mx-auto flex justify-center items-center">
              <Image 
-              src={Akinwale}
+              src={akinwale}
               alt="portfolio"
               width={1300}
               height={800}

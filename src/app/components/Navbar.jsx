@@ -31,7 +31,7 @@ const Navbar = ({handleDarkmode, darkmode}) => {
            }
          </div>
             <div className='xs:hidden md:block'>
-              <Link className='font-mono dark:text-white' href='/about'>About me</Link>
+              <Link className='font-mono dark:text-white ' href='/about'>About me</Link>
             </div>
             <div onClick={handleNav} className='cursor-pointer xs:block md:hidden'>
                  {

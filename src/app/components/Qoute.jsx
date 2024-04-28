@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Akinwale from '../assets/new.jpg'
+import akinwale from '../../../public/Akinwale1.jpg'
 import { slideIn,staggerContainer,textVariant } from "../utils/motion";
 import {motion} from 'framer-motion'
 const Qoute = () => {
@@ -26,7 +26,7 @@ const Qoute = () => {
             variants={slideIn('right', 'tween', 0.4, 1)}
           >
           <Image 
-            src={Akinwale}
+            src={akinwale}
             alt="akinwale"
             width={180}
             height={100}

@@ -1,13 +1,26 @@
 'use client'
 import Image from "next/image"
-import akinwale from '../assets/new.jpg'
+import akinwale from '../../../public/Akinwale.jpg'
 import { FaEnvelope } from "react-icons/fa"
 import { motion } from "framer-motion"
-import { fadeIn, slideIn, staggerContainer, textVariant, textVariant2 } from "../utils/motion"
+import { fadeIn, slideIn, staggerContainer, textVariant } from "../utils/motion"
+
+
+
 
 
 const About = ({darkmode}) => {
 
+
+  const handleDownload = (url) => {
+    const fileName = url.split('/').pop()
+    const link = document.createElement('a');
+    link.href = url; 
+    link.setAttribute('download', fileName)
+    document.body.appendChild(link); 
+    link.click(); 
+    document.body.removeChild(link); 
+  }
  
   return (
     <motion.div 
@@ -30,13 +43,16 @@ const About = ({darkmode}) => {
               <motion.div
               variants={slideIn('right', 'tween', 0.4, 1)}
               >
+
                 <Image 
                  src={akinwale}
                  width={400}
                  height={300}
+                 alt="actionpreneurr"
                  priority={true}
                  className="rounded-lg"
                 />
+              
                 </motion.div>
                 <motion.div
                    variants={slideIn('right', 'tween', 0.4, 1)}
@@ -44,11 +60,13 @@ const About = ({darkmode}) => {
                     <motion.h2 
                      variants={textVariant(1.2)}
                     className="lg:text-2xl xs:text-sm md:text-xl dark:text-white ">John Bakare</motion.h2>
-                    <div className="flex gap-2 items-center mt-2">
+                    <div className="flex gap-2 items-center mt-2 dark:text-white">
                     <FaEnvelope />
                     <p>Bakare.john2015@gmail.com</p>
                     </div>
-                 
+              <button onClick={() => {handleDownload('/Akinwale1.jpg')}} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+                Download Image
+              </button>
                 </motion.div>
              </motion.div>
              <div className="flex flex-col justify-center items-center">

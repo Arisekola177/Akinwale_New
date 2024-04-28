@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="xs:w-full lg:w-10/12 lg:mx-auto flex flex-col justify-center items-center py-8 font-poppins ">
             <motion.h1 
              variants={textVariant(1.1)}
-            className="xs:w-full dark:text-white xs:text-lg sm:text-xl xs:px-8 md:text-3xl lg:text-8xl py-4 font-semibold md:w-[600px] lg:w-[900px] lg:mx-auto text-center">Actionpreneur</motion.h1>
+            className="xs:w-full dark:text-white xs:text-lg sm:text-xl xs:px-8 md:text-3xl lg:text-8xl py-4 font-semibold md:w-[600px] lg:w-[900px] lg:mx-auto text-center">Actionpreneurr</motion.h1>
             <motion.p 
               variants={textVariant(1.2)}
             className="xs:w-full dark:text-white xs:text-xs xs:px-6  lg:px-0 md:text-base mt-5 md:w-[500px]  lg:w-[700px] mx-auto text-center leading-8"> Tech sales & Rev Ops analyst growth and strategist, empowering Africa's next generation workforce

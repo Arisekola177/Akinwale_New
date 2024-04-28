@@ -20,7 +20,7 @@ const Footer = () => {
                 
              </div>
              <div  className="mt-[100px] flex flex-col gap-5">
-             <h2 className=" xs:text-sm md:text-xl font-mono dark:text-white ">Actionpreneur</h2>  
+             <h2 className=" xs:text-sm md:text-xl font-mono dark:text-white ">Actionpreneurr</h2>  
               <Link href='https://www.linkedin.com/in/johnbakare/' target="blank"> 
                <FaLinkedin className="text-xl text-blue-600 cursor-pointer" /> 
                </Link>

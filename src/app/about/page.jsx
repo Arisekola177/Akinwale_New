@@ -72,7 +72,7 @@ const About = ({darkmode}) => {
              <div className="flex flex-col justify-center items-center">
                 <motion.h1
                  variants={textVariant(1.1)}
-                className="py-8 xs:text-base md:text-xl lg:text-3xl font-semibold dark:text-white font-poppins xs:w-[200px] md:w-[400px] mx-auto text-center"> Currently busy revolutionizing the way we make career de in the early stages in Africa  </motion.h1>
+                className="py-8 xs:text-base md:text-xl lg:text-3xl font-semibold dark:text-white font-poppins xs:w-[200px] md:w-[400px] mx-auto text-center"> Currently busy revolutionizing the way we make career decisions in the early stages in Africa  </motion.h1>
                 <motion.h2
                  variants={textVariant(1.5)}
                 className="py-8 font-poppins xs:w-full xs:text-xs sm:text-sm dark:text-white md:text-base md:w-[800px] mx-auto md:px-6 text-center leading-8">As a seasoned tech sales professional and Rev Ops Analyst, John is passionate about leveraging cutting-edge solutions to drive business growth while also contributing to helping the next billion workforce make more informed career decisions. With a proven track record in management consulting, strategy and growth, as well as sales leadership, John thrives in dynamic and fast-paced environments. His dedication to client success and user experience, coupled with exceptional negotiation skills and a deep understanding of industry trends, enables him to forge strong relationships and deliver tangible results. John is committed to staying at the forefront of technological advancements to ensure continued success for all stakeholders.</motion.h2>
